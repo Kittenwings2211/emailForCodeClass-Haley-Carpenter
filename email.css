@@ -1,4 +1,6 @@
-
+.card{
+    margin: 5px;
+}
 
 .container-fluid{
     border-style: solid;
