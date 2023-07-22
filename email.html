@@ -40,63 +40,67 @@
 
         <div class="row">
 
-          <div class="col-sm-3 bg-dark text-black" >
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Inbox (685)</li>
-                <li class="list-group-item">Important (75)</li>
-                <li class="list-group-item">Drafts</li>
-                <li class="list-group-item">Sent</li>
-                <li class="list-group-item">Trash (561)</li>
-                <li class="list-group-item"> <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" 
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                    Folders
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Warden</a></li>
-                    <li><a class="dropdown-item" href="#">Dog Guard</a></li>
-                    <li><a class="dropdown-item" href="#">Overly Perfumed Peacock</a></li>
+          <div class="col-lg-6 d-sm-grid">
+            <div class="rowOfInboxAndEmails">
+              <div class="col-sm-12 col-lg-12 bg-dark text-black" >
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Inbox (685)</li>
+                    <li class="list-group-item">Important (75)</li>
+                    <li class="list-group-item">Drafts</li>
+                    <li class="list-group-item">Sent</li>
+                    <li class="list-group-item">Trash (561)</li>
+                    <li class="list-group-item"> <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" 
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                        Folders
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Warden</a></li>
+                        <li><a class="dropdown-item" href="#">Dog Guard</a></li>
+                        <li><a class="dropdown-item" href="#">Overly Perfumed Peacock</a></li>
+                      </ul>
+                    </div></li>
                   </ul>
-                </div></li>
-              </ul>
+              </div>
+
+              <div class="col-sm-12 col-lg-12 bg-secondary" >
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn btn-success" type="submit">Search</button>
+                </form>
+                
+                  <div class="card border-info border-4 rounded-2" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">July 25, 2015</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Good morning, Warden.</h6>
+                      <p class="card-text">This is just my usual morning report on the building. Everything is fine. 
+                        There were no incidents...</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">October 15, 2013</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Hey, Samon.</h6>
+                      <p class="card-text">I was just wondering if you wanted to go to a Halloween party with me and some of the others. 
+                        I...</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">June 8, 2010</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Mass Email</h6>
+                      <p class="card-text">Hello, Sakura. Welcome to your new guard position at Nanba prison. I have the other guards listed
+                        in the email so if you need anything, don't hesitate to reach out!
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
           </div>
 
-          <div class="col-sm-3 bg-secondary" >
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn btn-success" type="submit">Search</button>
-            </form>
-            
-              <div class="card border-info border-4 rounded-2" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">July 25, 2015</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Good morning, Warden.</h6>
-                  <p class="card-text">This is just my usual morning report on the building. Everything is fine. 
-                    There were no incidents...</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">October 15, 2013</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Hey, Samon.</h6>
-                  <p class="card-text">I was just wondering if you wanted to go to a Halloween party with me and some of the others. 
-                    I...</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">June 8, 2010</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Mass Email</h6>
-                  <p class="card-text">Hello, Sakura. Welcome to your new guard position at Nanba prison. I have the other guards listed
-                    in the email so if you need anything, don't hesitate to reach out!
-                  </p>
-                </div>
-              </div>
-          </div>
-
-          <div class="col-md-6 bg-dark text-white">
+          <div class="col-lg-6 bg-dark text-white">
               <p>From: hrcarp@outlook.com</p>
               <p>To: Warden@nanba.com</p>
               <h1>Good morning, Warden.</h1>
@@ -114,7 +118,7 @@
 
         </div>
 
-      </div>
+    </div>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 

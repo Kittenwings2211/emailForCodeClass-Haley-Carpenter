@@ -1,3 +1,10 @@
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    
+}
+
 .card{
     margin: 5px;
 }
@@ -5,8 +12,8 @@
 .container-fluid{
     border-style: solid;
     border-color: black;
-    height: 100 vh;
-    width: 100vw;
+    height: 100;
+    width: 100;
 }
 .col-sm-3{
     border-style: solid;
